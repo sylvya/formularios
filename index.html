@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>formularios</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	
+</head>
+<body>
+	<section class="conten-principal">
+		<article class="conten-interno">
+			<h1 class="titulo-form">FORMULARIO1: LETRAS</h1>
+			<form action="#" class="formulario">
+				<input type="text" onkeypress="return soloLetras(event)" name="nombre" class="input nombre">
+			</form>
+			<h3 class="descripcion-form"> En este campo de texto sólo se permite el ingreso de letras de la A a la Z, generando todas las letras a minuscula y en donde el método utilizado está impidiendo  el ingreso de números y caracteres especiales, validando en el momento en que son ingresados los datos, enviando un alert de rechazo o un alert de ok. Realizado con Javascript</h3>
+		</article>
+		<article class="conten-interno">
+			<h1 class="titulo-form">FORMULARIO2: LETRAS</h1>
+			<form action="#" class="formulario">
+				<input type="text" name="nombre2" class="input apellidos"><br>
+				<input type="submit" value="Validar" name="validar" class="btn-validar">
+			</form>
+			<h3 class="descripcion-form">En este campo de texto se permite el ingreso de todo tipo de caracteres y los datos ingresados son validados al momento de dar click en el boton,  el método utilizado acepta sólo letras enviando un alert de ok o un alert de cuando rechaza numeros y carateres especiales. Realizado con Jquery</h3>
+		</article>
+				<article class="conten-interno">
+			<h1 class="titulo-form">FORMULARIO3:NÚMEROS</h1>
+			<form action="#" class="formulario">
+				<input type="text" onkeypress="return soloNumeros(event)" name="edad" class="input edad">
+			</form>
+			<h3 class="descripcion-form">En este campo de texto sólo se permite el ingreso de números y rechazando el ingreso de letras y caracteres especiales y en donde el método utilizado realiza la validacion al momento de ingresar los datos,  impidiendo  el ingreso de letras y caracteres especiales enviando alert de rechazo o un alert de ok. Realizado con Javascript</h3>
+		</article>
+		</article>
+				<article class="conten-interno">
+			<h1 class="titulo-form">FORMULARIO4:NÚMEROS</h1><br>
+			<form action="#" class="formulario">
+				<input type="text" name="telefono" class="telefono"><br><br>
+				<input type="submit" class="btn-telefono">
+			</form>
+			<h3 class="descripcion-form">En este campo de texto se permite el ingreso de todo tipo de caracteres y los datos ingresados son validados al momento de dar click en el boton,  el método utilizado acepta sólo letras enviando un alert de ok o un alert de cuando rechaza numeros y carateres especiales. Realizado con Jquery</h3>
+		</article>
+		</article>
+				<article class="conten-interno">
+			<h1 class="titulo-form">FORMULARIO5:SÍMBOLOS</h1><br>
+			<form action="#" class="formulario">
+				<input type="text" name="simbolos1" class="simbolos1" onkeypress="return soloSimbolos(event)"><br><br>
+			</form>
+			<h3 class="descripcion-form">En este campo de texto se permite el ingreso de todo tipo de caracteres y los datos ingresados son validados al momento de ingresar los datos al cuadro de texto, el método utilizado rechaza letras y numeros enviando un alert de rechazo o un alert de ok. Realizado con JavaScript</h3>
+		</article>
+		</article>
+				<article class="conten-interno">
+			<h1 class="titulo-form">FORMULARIO6:SÍMBOLOS</h1><br>
+			<form action="#" class="formulario">
+				<input type="text" name="simbolo2" class="simbolo2"><br><br>
+				<input type="submit" class="btn-simbolo">
+			</form>
+			<h3 class="descripcion-form">En este campo de texto se permite el ingreso de todo tipo de caracteres y los datos ingresados son validados al momento de dar click en el boton,  el método utilizado rechaza letras y numeros enviando un alert de rechazo o un alert de ok. Realizado con Jquery</h3>
+		</article>
+	</section>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	
+</body>
+</html>
