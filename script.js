@@ -232,3 +232,31 @@ function soloLetras(e){
 		}	
 		alert("haz ingresado correctamente los datos");
 	});
+
+
+	$('#formCorreo').submit(function(event){
+		event.preventDefault();
+		alert("todo está bien.");
+	});
+
+	//VALIDAR CORREO CON EXPRESIONES REGULARES.
+	$('#valCorreo').submit(function(event){
+		event.preventDefault();
+		var valor =  $(".correo2").val();
+		console.log(valor);
+		if (/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.([a-zA-Z]{2,4})+$/.test(valor)){
+			alert("Bien!! haz ingresado tu cuenta correctamente.");
+		} else {
+			alert("Dame tu email correctamente.");
+		}
+	});
+
+	/*function validarCorreo(){
+		event.preventDefault();	
+		var valor = $(".correo2").val();
+		console.log(valor);
+	};
+	//Otra forma de obtener el elemento por medio de un id y agregar al evento a la escucha al evento click y llamar la función.
+	document.getElementById("myBtn").addEventListener("click", validarCorreo);
+
+	*/
